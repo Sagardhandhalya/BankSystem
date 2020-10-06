@@ -1,7 +1,7 @@
 
 
 const fs = require('fs');
-const data = require('./record.json')
+const data = require('./Database.json')
 
 let current_account = process.argv[2];
 let saving_account_bal = data.saving_initial_balence;
@@ -31,13 +31,13 @@ else {
                is_command_valid = true;
                 checking_account_bal -= currennt_amount;
                 data.checking_initial_balence = checking_account_bal;
-                fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+                fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                     if (err) return console.log(err);
 
                 });
                 data.checking.push({ date, current_opration, currennt_amount });
 
-                fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+                fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                     if (err) return console.log(err);
 
                 });
@@ -55,13 +55,14 @@ else {
                is_command_valid = true;
                 saving_account_bal -= currennt_amount;
                 data.saving_initial_balence = saving_account_bal;
-                fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+                fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                     if (err) return console.log(err);
 
                 });
                 data.saving.push({ date, current_opration, currennt_amount });
 
-                fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+                fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
+
                     if (err) return console.log(err);
 
                 });
@@ -74,13 +75,13 @@ else {
            is_command_valid = true;
             checking_account_bal += currennt_amount;
             data.checking_initial_balence = checking_account_bal;
-            fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+            fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                 if (err) return console.log(err);
 
             });
             data.checking.push({ date, current_opration, currennt_amount });
 
-            fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+            fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                 if (err) return console.log(err);
 
             });
@@ -90,13 +91,13 @@ else {
            is_command_valid = true;
             saving_account_bal += currennt_amount;
             data.saving_initial_balence = saving_account_bal;
-            fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+            fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                 if (err) return console.log(err);
 
             });
             data.saving.push({ date, current_opration, currennt_amount });
 
-            fs.writeFile('./record.json', JSON.stringify(data), function writeJSON(err) {
+            fs.writeFile('./Database.json', JSON.stringify(data), function writeJSON(err) {
                 if (err) return console.log(err);
 
             });

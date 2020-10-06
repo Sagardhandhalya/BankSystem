@@ -1,11 +1,31 @@
 {
-    "saving_initial_balence": 8000,
-    "checking_initial_balence": 10500,
+    "saving_initial_balence": 15500,
+    "checking_initial_balence": 15000,
     "saving": [
         {
             "date": "10/6/2020",
             "current_opration": "Debit",
             "currennt_amount": 500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
         }
     ],
     "checking": [
@@ -13,6 +33,21 @@
             "date": "10/6/2020",
             "current_opration": "Credit",
             "currennt_amount": 500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
+        },
+        {
+            "date": "10/6/2020",
+            "current_opration": "Credit",
+            "currennt_amount": 1500
         }
     ]
 }

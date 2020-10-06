@@ -1,0 +1,37 @@
+Practical Definition 
+
+
+We need two bank accounts types – Checking Account and Savings Account with some initial balances in both the accounts.
+Manage credits and debits from these accounts. List the transactions made using the credit and debit and print the transactions for both the accounts. 
+Scenarios to handle 
+	
+Extract Money - Input value to extract must be multiple of 500.  
+	
+Add Money - Input value to add must be multiple of 500.  
+		
+Keep transactions for both credit and debit for both the accounts. 
+		
+Show transaction list for credit and debit separately with the final balances of these bank accounts. 
+
+Note: Use any editor, programming language, database. 
+
+
+Initial Balance – 10000 for both accounts 
+
+OUTPUT 
+
+Savings Account Transactions 
+
+07-09-2020  Debit 1000 
+08-09-2020  Credit 500 
+08-09-2020  Debit 1500 
+
+
+
+Final Balance = 8000 
+Checking Account Transactions 
+07-09-2020  Credit 1000 
+07-09-2020  Debit 2500 
+08-09-2020  Credit 1500 
+
+Final Balance = 10000 
